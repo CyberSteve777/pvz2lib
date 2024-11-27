@@ -34,7 +34,7 @@ void* hkCreateZombieTypenameMap(ZombieAlmanac* a1)
     // Let the game create the original alias->id map
     ZombieAlmanac* obj = oZombieAlmanacCtor(a1);
     // Now add our own zombie aliases to it
-    obj->m_aliasToId["placeholder_armor2"] = 446;
+    obj->m_aliasToId["placeholder_armor2"] = 441;
     return obj;
 }
 
@@ -47,7 +47,7 @@ void* hkCreatePlantNameMapper(PlantNameMapper* self)
     // Same deal with the ZombieAlamanc::ctor hook
     PlantNameMapper* obj = oPlantNameMapperCtor(self);
     // Register our own plant aliases
-    obj->m_aliasToId["gatlingpea"] = 168;
+    obj->m_aliasToId["gatlingpea"] = 188;
     return obj;
 }
 
