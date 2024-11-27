@@ -47,7 +47,7 @@ void* hkCreatePlantNameMapper(PlantNameMapper* self)
     // Same deal with the ZombieAlamanc::ctor hook
     PlantNameMapper* obj = oPlantNameMapperCtor(self);
     // Register our own plant aliases
-    obj->m_aliasToId["gatlingpea"] = 188;
+    obj->m_aliasToId["gatlingpea"] = 186;
     return obj;
 }
 
