@@ -111,10 +111,10 @@
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>C:\Users\brekko\AppData\Local\Android\Sdk\extras\saurikit\cydia_substrate;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>C:\Users\brekko\AppData\Local\Android\Sdk\extras\saurikit\cydia_substrate\lib\armeabi;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -151,7 +151,8 @@
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(ProjectDir)include;C:\Users\brekko\AppData\Local\Android\Sdk\extras\saurikit\cydia_substrate;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)include/cydia_substrate;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
     </ClCompile>
     <PostBuildEvent>
       <Message>
@@ -163,7 +164,7 @@
       <SharedLibrarySearchPath>%(SharedLibrarySearchPath)</SharedLibrarySearchPath>
       <AdditionalDependencies>
       </AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Users\brekko\AppData\Local\Android\Sdk\extras\saurikit\cydia_substrate\lib\armeabi;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)include/cydia_substrate/lib/armeabi;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <LibraryDependencies>substrate;%(LibraryDependencies)</LibraryDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -171,8 +172,9 @@
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(ProjectDir)include;F:\Android SDK\extras\saurikit\cydia_substrate;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)include/cydia_substrate;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>MaxSpeed</Optimization>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
     </ClCompile>
     <PostBuildEvent>
       <Message>
@@ -184,7 +186,7 @@
       <SharedLibrarySearchPath>%(SharedLibrarySearchPath)</SharedLibrarySearchPath>
       <AdditionalDependencies>
       </AdditionalDependencies>
-      <AdditionalLibraryDirectories>F:\Android SDK\extras\saurikit\cydia_substrate\lib\armeabi;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)include/cydia_substrate/lib/armeabi;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <LibraryDependencies>substrate;%(LibraryDependencies)</LibraryDependencies>
     </Link>
   </ItemDefinitionGroup>
